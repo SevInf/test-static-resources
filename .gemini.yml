@@ -30,3 +30,4 @@ capabilities:
   record-screenshots: false
   record-video: false
   screen-resolution: 1024x768
+  max-duration: 3600
