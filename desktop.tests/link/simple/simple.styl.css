@@ -1,0 +1,100 @@
+/* ../../../test.blocks/page/page.styl begin */
+.page {
+  padding: 20px;
+}
+/* ../../../test.blocks/page/page.styl end */
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl begin */
+html {
+  min-height: 100%;
+}
+.page_theme_normal {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl end */
+/* ../../../test.blocks/link/link.styl begin */
+.link_pseudo:not([class*="link_theme"]) {
+  cursor: pointer;
+  color: #00f;
+}
+.link_pseudo:not([class*="link_theme"]):hover {
+  color: #f00;
+}
+/* ../../../test.blocks/link/link.styl end */
+/* ../../../design/common.blocks/link/_theme/link_theme_simple.styl begin */
+.link_theme_simple {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.link_theme_simple,
+.link_theme_simple:link {
+  color: #008ace;
+}
+.link_theme_simple:visited {
+  color: #b40eb4;
+}
+.link_theme_simple:hover {
+  color: #c00;
+}
+/* ../../../design/common.blocks/link/_theme/link_theme_simple.styl end */
+/* ../../../design/common.blocks/link/_theme/link_theme_normal.styl begin */
+.link_theme_normal {
+  color: #44b;
+  cursor: pointer;
+  transition: color 0.15s ease-out;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+}
+.link_theme_normal:hover {
+  color: #e00;
+}
+/* ../../../design/common.blocks/link/_theme/link_theme_normal.styl end */
+/* ../../../common.blocks/icon/icon.styl begin */
+.icon {
+  display: inline-block;
+  text-align: center;
+  background: 50% no-repeat;
+/* Hack for correct baseline positioning */
+/*
+     * Чтобы иконка правильно позиционировалась внутри блочного контекста,
+     * нужно прописать родителю свойство line-height со значением, равным высоте иконки
+     */
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: '\00A0';
+}
+.icon .image {
+  margin: -5.18em 0 -5em;
+/* 0.18 — magic number, empirically found */
+  vertical-align: middle;
+}
+/* ../../../common.blocks/icon/icon.styl end */
+/* ../../../test.blocks/icon/icon.styl begin */
+.icon {
+  min-width: 1em;
+}
+/* ../../../test.blocks/icon/icon.styl end */
+/* ../../../test.blocks/icon/_action/icon_action.styl begin */
+.icon_action_up,
+.icon_action_right,
+.icon_action_down,
+.icon_action_left {
+  background-image: url("../../../test.blocks/icon/_action/arrow.svg");
+}
+.icon_action_up {
+  transform: rotate(180deg);
+}
+.icon_action_right {
+  transform: rotate(-90deg);
+}
+.icon_action_left {
+  transform: rotate(90deg);
+}
+.icon_action_download {
+  background-image: url("../../../test.blocks/icon/_action/download.svg");
+}
+/* ../../../test.blocks/icon/_action/icon_action.styl end */

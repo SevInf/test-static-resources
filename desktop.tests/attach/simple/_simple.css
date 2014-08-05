@@ -1,0 +1,206 @@
+/* ../../../test.blocks/page/page.styl begin */
+.page {
+  padding: 20px;
+}
+/* ../../../test.blocks/page/page.styl end */
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl begin */
+html {
+  min-height: 100%;
+}
+.page_theme_normal {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl end */
+/* ../../../design/common.blocks/attach/attach.styl begin */
+.attach__file,
+.attach__no-file,
+.attach .button__text {
+  display: none;
+}
+/* ../../../design/common.blocks/attach/attach.styl end */
+/* ../../../common.blocks/icon/icon.styl begin */
+.icon {
+  display: inline-block;
+  text-align: center;
+  background: 50% no-repeat;
+/* Hack for correct baseline positioning */
+/*
+     * Чтобы иконка правильно позиционировалась внутри блочного контекста,
+     * нужно прописать родителю свойство line-height со значением, равным высоте иконки
+     */
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: '\00A0';
+}
+.icon .image {
+  margin: -5.18em 0 -5em;
+/* 0.18 — magic number, empirically found */
+  vertical-align: middle;
+}
+/* ../../../common.blocks/icon/icon.styl end */
+/* ../../../test.blocks/icon/icon.styl begin */
+.icon {
+  min-width: 1em;
+}
+/* ../../../test.blocks/icon/icon.styl end */
+/* ../../../design/common.blocks/attach/_theme/attach_theme_simple.styl begin */
+.attach_theme_simple {
+  display: inline-block;
+  white-space: nowrap;
+}
+.attach_theme_simple .attach__control {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+}
+.attach_theme_simple .attach__file,
+.attach_theme_simple .attach__no-file {
+  display: inline;
+  margin-left: 0.5em;
+}
+.attach_theme_simple .attach__file .icon {
+  width: 1em;
+  margin-right: 0.3em;
+  background-image: url("../../../design/common.blocks/attach/_theme/icon_simple.png");
+}
+.attach_theme_simple .attach__clear {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.attach_theme_simple .attach__clear:before {
+  content: '×';
+}
+.attach_theme_simple.attach_disabled .attach__no-file,
+.attach_theme_simple.attach_disabled .attach__file {
+  opacity: 0.6;
+}
+.attach_theme_simple.attach_disabled .attach__clear {
+  display: none;
+}
+.attach_theme_simple .button {
+  position: relative;
+}
+.attach_theme_simple .button__text {
+  display: inline;
+  z-index: 1;
+}
+/* ../../../design/common.blocks/attach/_theme/attach_theme_simple.styl end */
+/* ../../../design/common.blocks/button/_theme/button_theme_simple.styl begin */
+.button_theme_simple {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0.2em 1em;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.3);
+  outline: 0;
+  border-radius: 3px;
+  color: #000;
+  background: #fff;
+}
+.button_theme_simple::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.button_theme_simple .button__text {
+  position: relative;
+}
+.button_theme_simple.button_type_link {
+  text-decoration: none;
+}
+.button_theme_simple.button_disabled {
+  opacity: 0.6;
+}
+.button_theme_simple.button_focused-hard {
+  box-shadow: 0 0 5px 1px #fc0;
+}
+.button_theme_simple.button_hovered {
+  border-color: rgba(0,0,0,0.5);
+}
+.button_theme_simple.button_checked {
+  background: #fff7db;
+}
+.button_theme_simple.button_pressed {
+  background: #fff7db;
+  box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.1);
+}
+.button_theme_simple.button_pressed.button_focused-hard {
+  box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.1), 0 0 5px 1px #fc0;
+}
+.button_theme_simple.button_pressed .button__text,
+.button_theme_simple.button_pressed .icon {
+  position: relative;
+  top: 1px;
+}
+.button_theme_simple .icon {
+  width: 1em;
+  margin-left: -0.7em;
+}
+.button_theme_simple .icon + .button__text {
+  margin-left: 0.3em;
+}
+.button_theme_simple .icon:last-child {
+  margin-right: -0.7em;
+}
+.button_theme_simple.button_togglable_radio:first-of-type,
+.button_theme_simple.button_togglable_radio ~ .button_togglable_radio {
+  border-right-width: 0;
+}
+.button_theme_simple.button_togglable_radio ~ .button_togglable_radio {
+  border-radius: 0;
+}
+.button_theme_simple.button_togglable_radio:first-of-type {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.button_theme_simple.button_togglable_radio:last-of-type {
+  border-right-width: 1px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.button_theme_simple.button_togglable_radio.button_hovered {
+  border-right-width: 1px;
+}
+.button_theme_simple.button_togglable_radio.button_hovered ~ .button_togglable_radio {
+  border-left-width: 0;
+}
+.button_theme_simple.button_togglable_radio.button_hovered ~ .button_togglable_radio ~ .button_togglable_radio {
+  border-left-width: 1px;
+}
+/* ../../../design/common.blocks/button/_theme/button_theme_simple.styl end */
+/* ../../../test.blocks/icon/_action/icon_action.styl begin */
+.icon_action_up,
+.icon_action_right,
+.icon_action_down,
+.icon_action_left {
+  background-image: url("../../../test.blocks/icon/_action/arrow.svg");
+}
+.icon_action_up {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.icon_action_right {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.icon_action_left {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.icon_action_download {
+  background-image: url("../../../test.blocks/icon/_action/download.svg");
+}
+/* ../../../test.blocks/icon/_action/icon_action.styl end */

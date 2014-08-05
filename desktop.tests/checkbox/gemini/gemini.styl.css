@@ -1,0 +1,389 @@
+/* ../../../test.blocks/page/page.styl begin */
+.page {
+  padding: 20px;
+}
+/* ../../../test.blocks/page/page.styl end */
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl begin */
+html {
+  min-height: 100%;
+}
+.page_theme_normal {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl end */
+/* ../../../common.blocks/checkbox/checkbox.tests/gemini.blocks/test/test.styl begin */
+.test {
+  padding: 5px;
+  width: 150px;
+}
+/* ../../../common.blocks/checkbox/checkbox.tests/gemini.blocks/test/test.styl end */
+/* ../../../design/common.blocks/button/_theme/button_theme_normal.styl begin */
+.button_theme_normal {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  color: #000;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  white-space: nowrap;
+/* Decorative element (inner background) */
+}
+.button_theme_normal::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.button_theme_normal .button__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.button_theme_normal .button__text {
+/*
+         * These rules fixes Opera 12+ && IE 9 bug with extra top margin when pressed
+         * Warning: bug still can be reproduced by clicking on button's border
+         * TODO: try to fix
+         */
+  position: relative;
+  display: inline-block;
+}
+.button_theme_normal .icon {
+  position: relative;
+}
+.button_theme_normal.button_type_link {
+  text-decoration: none;
+}
+.button_theme_normal:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  border-radius: 2px;
+  background: #fff;
+}
+.button_theme_normal.button_hovered {
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+.button_theme_normal.button_focused-hard {
+  z-index: 1;
+  background: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}
+.button_theme_normal.button_pressed:before {
+  background: #f6f5f3;
+}
+.button_theme_normal.button_checked {
+  background: rgba(153,122,0,0.5);
+}
+.button_theme_normal.button_checked:before {
+  background: #ffeba0;
+}
+.button_theme_normal.button_checked.button_pressed {
+  background: rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_checked.button_pressed:before {
+  background: #fee481;
+}
+.button_theme_normal.button_checked.button_hovered {
+  background: rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_action {
+  background: rgba(191,153,0,0.8);
+}
+.button_theme_normal.button_action:before {
+  background: #ffdb4d;
+}
+.button_theme_normal.button_action.button_pressed:before {
+  background: #fc0;
+}
+.button_theme_normal.button_action.button_hovered {
+  background: rgba(159,127,0,0.8);
+}
+.button_theme_normal.button_pseudo {
+  overflow: hidden;
+  background: 0;
+}
+.button_theme_normal.button_pseudo:before {
+  background: 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+.button_theme_normal.button_pseudo.button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+}
+.button_theme_normal.button_pseudo.button_focused-hard:before {
+  box-shadow: 0 0 0 1px rgba(178,142,0,0.6);
+}
+.button_theme_normal.button_pseudo.button_pressed:before {
+  background: rgba(0,0,0,0.05);
+}
+.button_theme_normal.button_pseudo.button_checked:before {
+  background: #ffeba0;
+  box-shadow: 0 0 0 1px rgba(153,122,0,0.5);
+}
+.button_theme_normal.button_pseudo.button_checked.button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_pseudo.button_checked.button_pressed:before {
+  background: #fee481;
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_disabled {
+  background: rgba(0,0,0,0.08);
+}
+.button_theme_normal.button_disabled:before {
+  display: none;
+}
+.button_theme_normal.button_disabled.button_checked:before {
+  display: block;
+  background: #ffeba0;
+}
+.button_theme_normal.button_disabled .button__text {
+  color: #aaa;
+}
+.button_theme_normal.button_disabled .icon {
+  opacity: 0.3;
+}
+.button_theme_normal.button_size_s {
+  font-size: 13px;
+  line-height: 24px;
+}
+.button_theme_normal.button_size_s .icon {
+  width: 24px;
+}
+.button_theme_normal.button_size_s .button__text {
+  margin: 0 10px;
+}
+.button_theme_normal.button_size_m {
+  font-size: 13px;
+  line-height: 28px;
+}
+.button_theme_normal.button_size_m .icon {
+  width: 28px;
+}
+.button_theme_normal.button_size_m .button__text {
+  margin: 0 13px;
+}
+.button_theme_normal.button_size_l {
+  font-size: 15px;
+  line-height: 32px;
+}
+.button_theme_normal.button_size_l .icon {
+  width: 32px;
+}
+.button_theme_normal.button_size_l .button__text {
+  margin: 0 15px;
+}
+.button_theme_normal.button_size_xl {
+  font-size: 18px;
+  line-height: 38px;
+}
+.button_theme_normal.button_size_xl .icon {
+  width: 38px;
+}
+.button_theme_normal.button_size_xl .button__text {
+  margin: 0 18px;
+}
+.button_theme_normal .icon + .button__text {
+  margin-left: 0;
+}
+.button_theme_normal .button__text:not(:last-child) {
+  margin-right: 0;
+}
+.control-group .button_theme_normal {
+  border-radius: 0;
+}
+.control-group .button_theme_normal:before {
+  right: 0;
+  border-radius: 0;
+}
+.control-group .button_theme_normal.button_checked:before {
+  left: 1px;
+  right: 1px;
+}
+.control-group .button_theme_normal.button_checked + .button:before {
+  left: 0;
+}
+.control-group > .button_theme_normal:first-child,
+.control-group > :first-child .button_theme_normal {
+  border-radius: 3px 0 0 3px;
+}
+.control-group > .button_theme_normal:first-child:before,
+.control-group > :first-child .button_theme_normal:before {
+  border-radius: 2px 0 0 2px;
+}
+.control-group > .button_theme_normal:last-child,
+.control-group > :last-child .button_theme_normal {
+  border-radius: 0 3px 3px 0;
+}
+.control-group > .button_theme_normal:last-child:before,
+.control-group > :last-child .button_theme_normal:before {
+  border-radius: 0 2px 2px 0;
+  right: 1px;
+}
+/* ../../../design/common.blocks/button/_theme/button_theme_normal.styl end */
+/* ../../../design/common.blocks/checkbox/_theme/checkbox_theme_normal.styl begin */
+.checkbox_theme_normal {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.checkbox_theme_normal:hover {
+  cursor: pointer;
+}
+.checkbox_theme_normal .checkbox__control {
+  position: relative;
+  z-index: -1;
+  margin: 0;
+  opacity: 0;
+}
+.checkbox_theme_normal .checkbox__box {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.2);
+}
+.checkbox_theme_normal .checkbox__box:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  border-radius: 2px;
+  background: #fff;
+}
+.checkbox_theme_normal .checkbox__box:after {
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  content: '';
+  background-image: url("../../../design/common.blocks/theme/_normal/tip.svg");
+  background-size: 100%;
+  opacity: 0;
+  transition: transform 0.05s ease-out, opacity 0.05s ease-out;
+}
+.checkbox_theme_normal.checkbox_size_m {
+  font-size: 13px;
+}
+.checkbox_theme_normal.checkbox_size_m .checkbox__box {
+  line-height: 14px;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.checkbox_theme_normal.checkbox_size_m .checkbox__box:after {
+  width: 15px;
+  height: 15px;
+  transform: translateY(-5px);
+}
+.checkbox_theme_normal.checkbox_size_l {
+  font-size: 15px;
+}
+.checkbox_theme_normal.checkbox_size_l .checkbox__box {
+  line-height: 17px;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+}
+.checkbox_theme_normal.checkbox_size_l .checkbox__box:after {
+  width: 18px;
+  height: 18px;
+  transform: translateY(-7px);
+}
+.checkbox_theme_normal.checkbox_checked .checkbox__box {
+  background: rgba(153,122,0,0.5);
+}
+.checkbox_theme_normal.checkbox_checked .checkbox__box:before {
+  background: #ffeba0;
+}
+.checkbox_theme_normal.checkbox_checked .checkbox__box:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.checkbox_theme_normal.checkbox_focused .checkbox__box {
+  box-shadow: 0 0 10px #fc0;
+}
+.checkbox_theme_normal.checkbox_hovered .checkbox__box {
+  background: rgba(0,0,0,0.3);
+}
+.checkbox_theme_normal.checkbox_hovered.checkbox_checked .checkbox__box {
+  background: rgba(129,103,0,0.6);
+}
+.checkbox_theme_normal.checkbox_disabled {
+  cursor: default;
+  color: #999;
+}
+.checkbox_theme_normal.checkbox_disabled .checkbox__box {
+  background: rgba(0,0,0,0.08);
+}
+.checkbox_theme_normal.checkbox_disabled .checkbox__box:before {
+  display: none;
+}
+.checkbox_theme_normal.checkbox_disabled.checkbox_checked .checkbox__box:after {
+  opacity: 0.4;
+}
+.checkbox_theme_normal.checkbox_type_button {
+  display: inline-block;
+}
+.checkbox_theme_normal.checkbox_type_button .checkbox__control {
+  position: absolute;
+}
+.checkbox_theme_normal.checkbox_type_line.checkbox_size_m {
+  margin-right: 13px;
+}
+.checkbox_theme_normal.checkbox_type_line.checkbox_size_l {
+  margin-right: 15px;
+}
+.checkbox_theme_normal.checkbox_type_line:last-child {
+  margin-right: 0;
+}
+/* ../../../design/common.blocks/checkbox/_theme/checkbox_theme_normal.styl end */
+/* ../../../common.blocks/checkbox/_type/checkbox_type_button.styl begin */
+.checkbox_type_button .checkbox__control {
+  visibility: hidden;
+}
+/* ../../../common.blocks/checkbox/_type/checkbox_type_button.styl end */
+/* ../../../common.blocks/icon/icon.styl begin */
+.icon {
+  display: inline-block;
+  text-align: center;
+  background: 50% no-repeat;
+/* Hack for correct baseline positioning */
+/*
+     * Чтобы иконка правильно позиционировалась внутри блочного контекста,
+     * нужно прописать родителю свойство line-height со значением, равным высоте иконки
+     */
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: '\00A0';
+}
+.icon .image {
+  margin: -5.18em 0 -5em;
+/* 0.18 — magic number, empirically found */
+  vertical-align: middle;
+}
+/* ../../../common.blocks/icon/icon.styl end */
+/* ../../../test.blocks/icon/icon.styl begin */
+.icon {
+  min-width: 1em;
+}
+/* ../../../test.blocks/icon/icon.styl end */
+/* ../../../test.blocks/icon/_social/icon_social.styl begin */
+.icon_social_twitter {
+  background-image: url("../../../test.blocks/icon/_social/twitter.png");
+}
+.icon_social_vk {
+  background-image: url("../../../test.blocks/icon/_social/vk.png");
+}
+/* ../../../test.blocks/icon/_social/icon_social.styl end */

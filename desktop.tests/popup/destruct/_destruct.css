@@ -1,0 +1,51 @@
+/* ../../../test.blocks/page/page.styl begin */
+.page {
+  padding: 20px;
+}
+/* ../../../test.blocks/page/page.styl end */
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl begin */
+html {
+  min-height: 100%;
+}
+.page_theme_normal {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl end */
+/* ../../../test.blocks/link/link.styl begin */
+.link_pseudo:not([class*="link_theme"]) {
+  cursor: pointer;
+  color: #00f;
+}
+.link_pseudo:not([class*="link_theme"]):hover {
+  color: #f00;
+}
+/* ../../../test.blocks/link/link.styl end */
+/* ../../../common.blocks/popup/popup.styl begin */
+.popup {
+  position: absolute;
+}
+/* ../../../common.blocks/popup/popup.styl end */
+/* ../../../test.blocks/popup/popup.styl begin */
+.popup:not([class*="popup_theme"]) {
+  display: none;
+  background: #fff7db;
+  box-shadow: inset 0 0 1px #f00;
+}
+.popup_visible:not([class*="popup_theme"]) {
+  display: block;
+}
+/* ../../../test.blocks/popup/popup.styl end */
+/* ../../../design/common.blocks/popup/_theme/popup_theme_simple.styl begin */
+.popup_theme_simple {
+  display: none;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.popup_theme_simple.popup_visible {
+  display: block;
+}
+/* ../../../design/common.blocks/popup/_theme/popup_theme_simple.styl end */

@@ -1,0 +1,145 @@
+/* ../../../test.blocks/page/page.styl begin */
+.page {
+  padding: 20px;
+}
+/* ../../../test.blocks/page/page.styl end */
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl begin */
+html {
+  min-height: 100%;
+}
+.page_theme_normal {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl end */
+/* ../../../test.blocks/link/link.styl begin */
+.link_pseudo:not([class*="link_theme"]) {
+  cursor: pointer;
+  color: #00f;
+}
+.link_pseudo:not([class*="link_theme"]):hover {
+  color: #f00;
+}
+/* ../../../test.blocks/link/link.styl end */
+/* ../../../common.blocks/popup/popup.styl begin */
+.popup {
+  position: absolute;
+}
+/* ../../../common.blocks/popup/popup.styl end */
+/* ../../../test.blocks/popup/popup.styl begin */
+.popup:not([class*="popup_theme"]) {
+  display: none;
+  background: #fff7db;
+  box-shadow: inset 0 0 1px #f00;
+}
+.popup_visible:not([class*="popup_theme"]) {
+  display: block;
+}
+/* ../../../test.blocks/popup/popup.styl end */
+/* ../../../design/common.blocks/popup/_theme/popup_theme_simple.styl begin */
+.popup_theme_simple {
+  display: none;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.popup_theme_simple.popup_visible {
+  display: block;
+}
+/* ../../../design/common.blocks/popup/_theme/popup_theme_simple.styl end */
+/* ../../../design/common.blocks/input/_theme/input_theme_simple.styl begin */
+.input_theme_simple {
+  display: inline-block;
+}
+.input_theme_simple .input__box,
+.input_theme_simple.input_type_textarea .input__control {
+  position: relative;
+  display: block;
+  user-select: none;
+  border: 1px solid rgba(0,0,0,0.3);
+  background: #fff;
+}
+.input_theme_simple .input__control {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  -webkit-appearance: none;
+}
+.input_theme_simple .input__control::-ms-clear {
+  display: none;
+}
+.input_theme_simple .input__control::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.input_theme_simple .input__control::-webkit-search-cancel-button {
+  display: none;
+}
+.input_theme_simple .input__clear {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+.input_theme_simple .input__clear:after {
+  font-size: 140%;
+  font-weight: bold;
+  line-height: 1;
+  display: block;
+  width: 1.2em;
+  content: '×';
+  text-align: center;
+}
+.input_theme_simple .input__clear_visible {
+  display: block;
+  cursor: pointer;
+  opacity: 0.2;
+}
+.input_theme_simple .input__clear_visible:hover {
+  opacity: 1;
+}
+.input_theme_simple.input_disabled {
+  opacity: 0.6;
+}
+.input_theme_simple.input_disabled .input__control {
+  resize: none;
+}
+.input_theme_simple.input_disabled .input__clear {
+  display: none;
+}
+.input_theme_simple.input_disabled .input__box,
+.input_theme_simple.input_disabled .input__control {
+  cursor: auto;
+}
+.input_theme_simple.input_width_available {
+  width: 100%;
+}
+.input_theme_simple.input_focused .input__box,
+.input_theme_simple.input_focused.input_type_textarea .input__control {
+  box-shadow: 0 0 5px 1px #fc0;
+}
+.input_theme_simple.input_focused .input__control:focus {
+  outline: none;
+}
+.input_theme_simple.input_type_textarea {
+  position: relative;
+}
+.input_theme_simple.input_type_textarea.input_disabled .input__control {
+  resize: none;
+}
+.input_theme_simple.input_type_textarea.input_has-clear .input__clear {
+  height: 18px;
+}
+.input_theme_simple.input_type_textarea.input_has-clear .input__control {
+  padding-right: 20px;
+}
+/* ../../../design/common.blocks/input/_theme/input_theme_simple.styl end */

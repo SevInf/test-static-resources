@@ -1,0 +1,233 @@
+/* ../../../test.blocks/page/page.styl begin */
+.page {
+  padding: 20px;
+}
+/* ../../../test.blocks/page/page.styl end */
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl begin */
+html {
+  min-height: 100%;
+}
+.page_theme_normal {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl end */
+/* ../../../common.blocks/menu/menu.tests/gemini.blocks/test/test.styl begin */
+.test {
+  display: table-cell;
+  width: 150px;
+  padding-right: 20px;
+}
+.test .menu {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+/* ../../../common.blocks/menu/menu.tests/gemini.blocks/test/test.styl end */
+/* ../../../common.blocks/menu/menu.styl begin */
+.menu {
+  overflow-y: auto;
+}
+/* ../../../common.blocks/menu/menu.styl end */
+/* ../../../design/common.blocks/menu/_theme/menu_theme_normal.styl begin */
+.menu_theme_normal {
+  box-sizing: border-box;
+  user-select: none;
+  outline: 0;
+  background: #fff;
+}
+.menu_theme_normal.menu_size_s {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 3px 0;
+}
+.menu_theme_normal.menu_size_s .menu-item + .menu__group {
+  margin-top: 3px;
+}
+.menu_theme_normal.menu_size_s .menu__group {
+  padding: 3px 0;
+}
+.menu_theme_normal.menu_size_s .menu__group-title {
+  padding: 0 10px;
+}
+.menu_theme_normal.menu_size_m {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 4px 0;
+}
+.menu_theme_normal.menu_size_m .menu-item + .menu__group {
+  margin-top: 4px;
+}
+.menu_theme_normal.menu_size_m .menu__group {
+  padding: 4px 0;
+}
+.menu_theme_normal.menu_size_m .menu__group-title {
+  padding: 0 13px;
+}
+.menu_theme_normal.menu_size_l {
+  font-size: 15px;
+  line-height: 28px;
+  padding: 5px 0;
+}
+.menu_theme_normal.menu_size_l .menu-item + .menu__group {
+  margin-top: 5px;
+}
+.menu_theme_normal.menu_size_l .menu__group {
+  padding: 5px 0;
+}
+.menu_theme_normal.menu_size_l .menu__group-title {
+  padding: 0 15px;
+}
+.menu_theme_normal.menu_size_xl {
+  font-size: 15px;
+  line-height: 32px;
+  padding: 6px 0;
+}
+.menu_theme_normal.menu_size_xl .menu-item + .menu__group {
+  margin-top: 6px;
+}
+.menu_theme_normal.menu_size_xl .menu__group {
+  padding: 6px 0;
+}
+.menu_theme_normal.menu_size_xl .menu__group-title {
+  padding: 0 20px;
+}
+.menu_theme_normal .menu__group {
+  border: 1px solid rgba(0,0,0,0.1);
+  border-width: 1px 0;
+}
+.menu_theme_normal .menu__group-title {
+  color: #999;
+}
+.menu_theme_normal .menu__group + .menu__group {
+  border-top: 0;
+}
+.menu_theme_normal .menu__group:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.menu_theme_normal .menu__group:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+/* ../../../design/common.blocks/menu/_theme/menu_theme_normal.styl end */
+/* ../../../design/common.blocks/menu-item/_theme/menu-item_theme_normal.styl begin */
+.menu-item_theme_normal {
+  position: relative;
+  white-space: nowrap;
+}
+.menu-item_theme_normal.menu-item_disabled {
+  opacity: 0.3;
+}
+.menu-item_theme_normal .link_disabled {
+  cursor: text;
+}
+.menu-item_theme_normal.menu-item_checked {
+  background: 0 50% no-repeat url("../../../design/common.blocks/theme/_normal/tip.svg");
+}
+.menu-item_theme_normal.menu-item_hovered {
+  cursor: pointer;
+  background-color: #ffeba0;
+}
+.menu-item_theme_normal.menu-item_type_link .link {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+.menu-item_theme_normal .icon {
+  width: 16px;
+  margin-right: 5px;
+}
+.menu_size_s .menu-item_theme_normal {
+  padding: 0 10px;
+  background-size: 14px;
+  background-position: 10px 50%;
+}
+.menu_size_s .menu__group + .menu-item_theme_normal {
+  margin-top: 3px;
+}
+.menu_size_s[class*='menu_mode'] .menu-item_theme_normal,
+.menu_size_s .menu__group-title ~ .menu-item_theme_normal {
+  padding: 0 30px;
+}
+.menu_size_m .menu-item_theme_normal {
+  padding: 0 13px;
+  background-size: 14px;
+  background-position: 13px 50%;
+}
+.menu_size_m .menu__group + .menu-item_theme_normal {
+  margin-top: 4px;
+}
+.menu_size_m[class*='menu_mode'] .menu-item_theme_normal,
+.menu_size_m .menu__group-title ~ .menu-item_theme_normal {
+  padding: 0 30px;
+}
+.menu_size_l .menu-item_theme_normal {
+  padding: 0 15px;
+  background-size: 15px;
+  background-position: 15px 50%;
+}
+.menu_size_l .menu__group + .menu-item_theme_normal {
+  margin-top: 5px;
+}
+.menu_size_l[class*='menu_mode'] .menu-item_theme_normal,
+.menu_size_l .menu__group-title ~ .menu-item_theme_normal {
+  padding: 0 34px;
+}
+.menu_size_xl .menu-item_theme_normal {
+  padding: 0 20px;
+  background-size: 15px;
+  background-position: 20px 50%;
+}
+.menu_size_xl .menu__group + .menu-item_theme_normal {
+  margin-top: 6px;
+}
+.menu_size_xl[class*='menu_mode'] .menu-item_theme_normal,
+.menu_size_xl .menu__group-title ~ .menu-item_theme_normal {
+  padding: 0 40px;
+}
+/* ../../../design/common.blocks/menu-item/_theme/menu-item_theme_normal.styl end */
+/* ../../../test.blocks/link/link.styl begin */
+.link_pseudo:not([class*="link_theme"]) {
+  cursor: pointer;
+  color: #00f;
+}
+.link_pseudo:not([class*="link_theme"]):hover {
+  color: #f00;
+}
+/* ../../../test.blocks/link/link.styl end */
+/* ../../../common.blocks/icon/icon.styl begin */
+.icon {
+  display: inline-block;
+  text-align: center;
+  background: 50% no-repeat;
+/* Hack for correct baseline positioning */
+/*
+     * Чтобы иконка правильно позиционировалась внутри блочного контекста,
+     * нужно прописать родителю свойство line-height со значением, равным высоте иконки
+     */
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: '\00A0';
+}
+.icon .image {
+  margin: -5.18em 0 -5em;
+/* 0.18 — magic number, empirically found */
+  vertical-align: middle;
+}
+/* ../../../common.blocks/icon/icon.styl end */
+/* ../../../test.blocks/icon/icon.styl begin */
+.icon {
+  min-width: 1em;
+}
+/* ../../../test.blocks/icon/icon.styl end */
+/* ../../../test.blocks/icon/_social/icon_social.styl begin */
+.icon_social_twitter {
+  background-image: url("../../../test.blocks/icon/_social/twitter.png");
+}
+.icon_social_vk {
+  background-image: url("../../../test.blocks/icon/_social/vk.png");
+}
+/* ../../../test.blocks/icon/_social/icon_social.styl end */

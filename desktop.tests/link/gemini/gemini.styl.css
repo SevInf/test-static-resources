@@ -1,0 +1,43 @@
+/* ../../../test.blocks/page/page.styl begin */
+.page {
+  padding: 20px;
+}
+/* ../../../test.blocks/page/page.styl end */
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl begin */
+html {
+  min-height: 100%;
+}
+.page_theme_normal {
+  font: 13px/15px Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  color: #000;
+  background: #fff;
+}
+/* ../../../design/common.blocks/page/_theme/page_theme_normal.styl end */
+/* ../../../test.blocks/link/link.styl begin */
+.link_pseudo:not([class*="link_theme"]) {
+  cursor: pointer;
+  color: #00f;
+}
+.link_pseudo:not([class*="link_theme"]):hover {
+  color: #f00;
+}
+/* ../../../test.blocks/link/link.styl end */
+/* ../../../design/common.blocks/link/_theme/link_theme_normal.styl begin */
+.link_theme_normal {
+  color: #44b;
+  cursor: pointer;
+  transition: color 0.15s ease-out;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+}
+.link_theme_normal:hover {
+  color: #e00;
+}
+/* ../../../design/common.blocks/link/_theme/link_theme_normal.styl end */
+/* ../../../common.blocks/link/link.tests/gemini.blocks/separator/separator.styl begin */
+.separator {
+  padding-bottom: 15px;
+}
+/* ../../../common.blocks/link/link.tests/gemini.blocks/separator/separator.styl end */
